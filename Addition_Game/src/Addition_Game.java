@@ -127,6 +127,41 @@ public class Addition_Game {
 				
 			}
 		}
+// Round 4 (Final round)
+		// Once again the hardness level of the question is increased
+		hardness *= 10;
+		int numberC = (int)(Math.random()* hardness);
+		int numberD = (int)(Math.random()* hardness);
+		// The user is asked to add two numbers
+		System.out.println("What is " + numberC + " + " + numberD
+				+ "?");
+		// Correct answer of the question is stored in the variable RightAnswer
+		int RightAnswer = numberC + numberD;
+		// Variable UserAnswer is used to store the value prompt by the user
+		int UserAnswer = input.nextInt();
+		
+// If statement is implied to check the answer
+	if (UserAnswer == RightAnswer){
+		// IF the answer is correct, the user will be given 10 points
+		System.out.println("Well done, You are right");
+		score += 10;
+		System.out.println("Your Final Score = " + score);
+		}
+	else {
+		// if the answer is incorrect, a simple question is asked
+		System.out.println("Sorry, your answer is incorrect");
+		System.out.println("The correct answer is " + RightAnswer);
+		// Points are not given for answering the simple question
+		System.out.println("What is 400 + 100 ?");
+		int AnsWer = input.nextInt();
+		if (AnsWer == 500) {
+			System.out.println("You are right");
+			// Lastly the final score is printed 
+			System.out.println("Final Score = " + score);
+			
+			
+		}
+	}
 
 
 	}
