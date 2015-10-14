@@ -57,6 +57,44 @@ public class Addition_Game {
 			System.out.println("your answer is correct");
 		}
 		}
+						//Round 2
+						// The hardness of the question is increased
+						hardness *= 10;
+						int number3 = (int)(Math.random()*hardness);
+						int number4 = (int)(Math.random()*hardness);
+						
+// The user is asked to add the two numbers
+		System.out.println("What is " + number3 + " + " + number4 + "?");
+// The correct answer is stored in variable rightanswer
+		int rightanswer = number3 + number4;
+		// Variable useranswer is used to store the value prompt by the user
+		int useranswer = input.nextInt();
+// If statement is applied to verify the user answer
+		if (useranswer == rightanswer){
+// The user will get 10 points for each right answer
+		System.out.println("your answer is correct");
+		score += 10;
+
+		System.out.println("Your Current Score = " + score);
+			
+		}
+		else {
+// if the answer is incorrect, the correct answer is shown
+		System.out.println(" Your answer is incorrect");
+		System.out.println("The correct answer is 9" + rightanswer);
+
+// The user is asked a simple question
+		System.out.println("What is 5 + 5 ?");
+		int userAnswer = input.nextInt();
+		if (userAnswer == 10) {
+// The user is not getting point of answering the simple question
+		System.out.println("You are correct, Be ready for the "
+				+ "next question");
+
+
+		}
+		}
+
 
 
 	}
