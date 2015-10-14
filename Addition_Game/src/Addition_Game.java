@@ -35,7 +35,7 @@ public class Addition_Game {
 						//		IF correct
 							//			Tell them it was correct
 							System.out.println("Your answer was correct");
-							//			Give them points
+							//	10 points is given for correct answer
 							score = 10;
 
 		System.out.println("Current Score = " + score);
@@ -94,7 +94,39 @@ public class Addition_Game {
 
 		}
 		}
-
+// Round 3
+		// The question hardness is increased than round2
+		hardness *= 10;
+		int numberA = (int)(Math.random()* hardness);
+		int numberB = (int)(Math.random()*hardness);
+// The user is asked to add two numbers
+		System.out.println("What is " + numberA + " + " + numberB + "?");
+		// Correct answer is stored in variable CorrectAnswer
+		int CorrectAnswer = numberA + numberB;
+		// Variable Useranswer is used to store the value prompt by the user
+		int Useranswer = input.nextInt();
+// If statement is used to verify the user answer
+		if (Useranswer == CorrectAnswer){
+			// if the answer is correct, 10 points will be awarded
+			System.out.println("You are absolutely correct");
+			// The score will be added for the each correct answer
+			score+= 10;
+			System.out.println("Your current Score is " + score);
+			}
+		else {
+			// if the answer is wrong, the correct answer is given
+			System.out.println("Your answer is wrong");
+			System.out.println("The right answer is " + CorrectAnswer);
+			/* A simpler question is asked to the user, however, the points is not
+			awarded for the simple question*/
+			System.out.println("What is 20 + 30 ?");
+			int Answer = input.nextInt();
+			if (Answer == 50){
+				System.out.println("You are correct, Get ready for the"
+						+ " final question ");
+				
+			}
+		}
 
 
 	}
