@@ -16,7 +16,6 @@ public class Addition_Game {
 		System.out.println("Hello Team");
 		int hardness = 10;
 		int score = 0;
-		// Round 1
 				int number1 = (int)(Math.random()*hardness);
 						System.out.println("Random number 1 is: " + number1);
 						int number2 = (int)(Math.random()*hardness);
